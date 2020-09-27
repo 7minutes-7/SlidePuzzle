@@ -46,7 +46,6 @@ void play(string food, ObjectPtr game_board[], ScenePtr scene, ObjectPtr init_bo
 				if (game_board[j] == object)
 					break;
 			}
-			cout << j << endl;
 
 			if ((j % row > 0 && j - 1 == *blank) ||
 				(j % row < row - 1 && j + 1 == *blank) ||
@@ -133,7 +132,6 @@ int main()
 		play(food, b_game_board, b_title, b_init_board, startx, starty, diff, row, &blank);
 		timer->setOnTimerCallback([&](TimerPtr t)->bool {
 			mix(b_game_board, b_title, startx, starty, diff, row, &blank);
-			cout << "timeout!" << count + 1 << endl;
 			count++;
 			if (count < 300) {
 				t->set(0.05f);
@@ -157,7 +155,6 @@ int main()
 
 		timer->setOnTimerCallback([&](TimerPtr t)->bool {
 			mix(n_game_board, n_title, startx, starty, diff, row, &blank);
-			cout << "timeout!" << count + 1 << endl;
 			count++;
 			if (count < 200) {
 				t->set(0.05f);
@@ -182,7 +179,6 @@ int main()
 
 		timer->setOnTimerCallback([&](TimerPtr t)->bool {
 			mix(f_game_board, f_title, startx, starty, diff, row, &blank);
-			cout << "timeout!" << count + 1 << endl;
 			count++;
 			if (count < 100) {
 				t->set(0.05f);
