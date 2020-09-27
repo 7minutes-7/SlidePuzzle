@@ -6,6 +6,7 @@
 ![main](https://github.com/7minutes-7/SlidePuzzle/blob/master/Images/main.png)
 
 CAU DONALD'S에서는 햄버거, 치킨너겟, 감자튀김을 판매하고 있습니다.
+
 원하는 음식의 아이콘을 누르면 퍼즐게임이 시작됩니다.
 
 
